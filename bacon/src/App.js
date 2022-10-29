@@ -4,7 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Bacon from "./pages/Bacon";
 import About from "./pages/About";
-import '/usr/share/caddy/CreativeProject3/bacon/src/App.css';
+import './App.css';
 
 
 export default function App() {
@@ -21,5 +21,6 @@ export default function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+//export default App
+//const root = ReactDOM.createRoot(document.getElementById('root'));
+//root.render(<App />);

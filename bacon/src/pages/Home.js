@@ -1,4 +1,4 @@
-import '/usr/share/caddy/CreativeProject3/bacon/src/App.css';
+import '../App.css';
 const Home = () => {
   return (<div id = "bodyDiv">
             <h1>Do you love bacon as much as we do?</h1>

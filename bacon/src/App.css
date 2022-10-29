@@ -84,3 +84,12 @@ img {
  #bodyDiv {
    margin-top: 75px;
  }
+
+#baconImages {
+  min-height: 400px;
+}
+
+.baconButton {
+  padding: 5px;
+  margin: 20px;
+}

@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import '/usr/share/caddy/CreativeProject3/bacon/src/App.css';
+import '../App.css';
 
 
 const Layout = () => {
