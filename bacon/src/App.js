@@ -4,6 +4,8 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Bacon from "./pages/Bacon";
 import About from "./pages/About";
+import '/usr/share/caddy/CreativeProject3/bacon/src/App.css';
+
 
 export default function App() {
   return (

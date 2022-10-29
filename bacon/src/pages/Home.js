@@ -1,10 +1,16 @@
+import '/usr/share/caddy/CreativeProject3/bacon/src/App.css';
 const Home = () => {
-  return (<>
-            <h1>Bacon Ipsum</h1>
-            <h2>Welcome to the world's best Lorem Ipsum gnerator!</h2>
-            <h2>Who doesn't love bacon afterall???</h2>
+  return (<div id = "bodyDiv">
+            <h1>Do you love bacon as much as we do?</h1>
+            <h2>Play our game that will make you hungry for bacon!</h2>
+            <h2>Click on the bacon tab in the bar at the top!</h2>
+            
             <img src="https://thestayathomechef.com/wp-content/uploads/2020/01/How-To-Cook-Bacon-In-The-Oven-1.jpg" width="50%"></img>
-          </>)
+            <footer>
+        <p>Github Repository: <a href="https://github.com/pearlhulbert/CreativeProject3">https://github.com/pearlhulbert/CreativeProject3</a></p>
+        <p>By: Noelle Marshall, Pearl Hulbert, Logan Thurman</p>
+    </footer>
+          </div>)
 };
 
 export default Home;

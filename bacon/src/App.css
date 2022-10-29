@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+   background-color: #F9ECEC; 
+   text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: 	#802A2A;
+  color: white;
+}
+
+link {
+  font-size: 45px;
+
+}
+
+img {
+  margin: 25px;
+}
+
+.bg-light {
+    background-color: #E1927A !important;
+}
+
+.navbar li {
+        margin-left : 1em;
+        margin-right : 1em;
+        font-size: 20px !important;
+}
+    
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.navbar > p {
+    font-size: 25px
+}
+ #bodyDiv {
+   margin-top: 75px;
+ }
