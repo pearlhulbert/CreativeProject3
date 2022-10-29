@@ -81,6 +81,31 @@ img {
 .navbar > p {
     font-size: 25px
 }
- #bodyDiv {
-   margin-top: 75px;
- }
+ 
+.abt-img {
+   width: 33%;
+display: inline;
+padding: 25px;
+}
+
+.abt-info > p {
+    display: inline;
+    margin: 50px;
+
+}
+
+.about-container {
+    margin: 25px;
+}
+
+@media all and (max-width: 959px) {
+    #bodyDiv {
+         margin-top: 150px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    #bodyDiv {
+         margin-top: 75px;
+    }
+} 
