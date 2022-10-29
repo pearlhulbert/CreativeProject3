@@ -66,7 +66,7 @@ class Bacon extends React.Component {
     <button class="baconButton" onClick={this.buttonClick3}> Button 3</button>
     <footer>
           <p>Github Repository: <a href="https://github.com/pearlhulbert/CreativeProject3">https://github.com/pearlhulbert/CreativeProject3</a></p>
-          <p>By: Noelle Marshall, Pearl Hulbert, Logan Thurman</p>
+          <p>By: Noelle Marshall, Pearl Hulbert, and Logan Thurman</p>
       </footer></div>);
   }
 }
