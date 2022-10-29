@@ -44,11 +44,16 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 75px;
   font-family: 'Satisfy', cursive;
 }
 
 h2 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -106,7 +111,7 @@ padding: 25px;
 
 @media all and (max-width: 959px) {
     #bodyDiv {
-         margin-top: 150px;
+         margin-top: 200px;
     }
 }
 

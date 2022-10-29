@@ -8,7 +8,7 @@ const Home = () => {
             <img src="https://thestayathomechef.com/wp-content/uploads/2020/01/How-To-Cook-Bacon-In-The-Oven-1.jpg" width="50%"></img>
             <footer>
         <p>Github Repository: <a href="https://github.com/pearlhulbert/CreativeProject3">https://github.com/pearlhulbert/CreativeProject3</a></p>
-        <p>By: Noelle Marshall, Pearl Hulbert, Logan Thurman</p>
+        <p>By: Noelle Marshall, Pearl Hulbert, and Logan Thurman</p>
     </footer>
           </div>)
 };

@@ -102,7 +102,7 @@ class Bacon extends React.Component {
 
   render() {
     const notBacons = this.state.imgIndices.map((item, index) =>
-      <img key={index} alt="not bacon" src={this.state.notBacon[item]} width="300px" />
+      <img key={index} alt="not bacon" src={this.state.notBacon[item]} width="20%" />
     );
     const panImage = "https://i.pinimg.com/originals/c3/6a/2d/c36a2da77aff809fc33fdf71d2585091.png";
     return (
@@ -117,7 +117,7 @@ class Bacon extends React.Component {
     <input type="image" alt="pan5" src={panImage} class={this.state.panClass[4]} onClick={this.buttonClick5} width="10%" />
     <footer>
           <p>Github Repository: <a href="https://github.com/pearlhulbert/CreativeProject3">https://github.com/pearlhulbert/CreativeProject3</a></p>
-          <p>By: Noelle Marshall, Pearl Hulbert, Logan Thurman</p>
+          <p>By: Noelle Marshall, Pearl Hulbert, and Logan Thurman</p>
       </footer></div>);
   }
 }
