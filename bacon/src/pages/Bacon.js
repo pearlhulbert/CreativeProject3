@@ -54,7 +54,7 @@ class Bacon extends React.Component {
 
   render() {
     const notBacons = this.state.imgIndices.map((item, index) =>
-      <img key={index} src={this.state.notBacon[item]} width="300px" />
+      <img key={index} src={this.state.notBacon[item]} width="20%" />
     );
     return (
     <div id = "bodyDiv"><h1>Bacon for the win!</h1>
