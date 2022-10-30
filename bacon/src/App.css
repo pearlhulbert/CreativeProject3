@@ -130,8 +130,19 @@ padding: 25px;
   margin: 20px;
 }
 
-#bacon-ipsum {
-  background-color: black;
-  text-color: white;
+.rotate {
+    padding: 5px;
+    margin: 20px;
+    transform: rotate(360deg);
+    transition: transform 0.5s linear;
 }
 
+#bacon-ipsum {
+  background-color: black;
+  position:absolute;
+  height:100vh;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

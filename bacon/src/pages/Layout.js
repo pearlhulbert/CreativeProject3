@@ -17,9 +17,6 @@ const Layout = () => {
 <li class="nav-item">
 <Link class="nav-link" to="/about">About Us</Link>
 </li>
-<li>
-<Link class="nav-link" to="/bacon-ipsum">Bacon-Ipsum</Link>
-</li>
 </ul>
 </div>
 </nav>

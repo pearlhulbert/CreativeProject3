@@ -6,7 +6,6 @@ class Bacon extends React.Component {
   constructor(props) {
     super(props);
     var bacon = "https://thestayathomechef.com/wp-content/uploads/2020/01/How-To-Cook-Bacon-In-The-Oven-1.jpg";
-
     this.state = {
       notBacon: [
         bacon,
@@ -18,8 +17,12 @@ class Bacon extends React.Component {
       ], 
       imgIndices:  [1, 2, 3, 4],
       allowClick: true,
-      panClass: ["baconButton", "baconButton", "baconButton", "baconButton", "baconButton"]
+      panClass: ["baconButton", "baconButton", "baconButton", "baconButton", "baconButton"],
+      text: ''
     };
+    
+    this.win = false;
+    this.text = '';
 
     this.winBacon = this.winBacon.bind(this);
     this.resetClass = this.resetClass.bind(this);
@@ -79,10 +82,20 @@ class Bacon extends React.Component {
     }
     this.randomizeImages([0, 2]);
   }
+  
+   getApiStuff() {
+          var url = "https://baconipsum.com/api/?type=all-meat";
+          console.log(url);
+          fetch(url)
+            .then((response) => {
+              return response.json();
+            }).then((baconText) => {	
+              this.setState({text:baconText});
+          });
+      }
 
   randomizeImages(indices){
     if(!this.state.allowClick){ return; }
-
     let newIndices = this.state.imgIndices;
     indices.forEach(i => 
       newIndices[i] = Math.floor(Math.random() * this.state.notBacon.length)
@@ -97,7 +110,8 @@ class Bacon extends React.Component {
   }
 
   winBacon(){
-    alert("you win!");
+    this.getApiStuff();
+    this.win = true;
   }
 
   render() {
@@ -105,7 +119,7 @@ class Bacon extends React.Component {
       <img key={index} alt="not bacon" src={this.state.notBacon[item]} width="20%" />
     );
     const panImage = "https://i.pinimg.com/originals/c3/6a/2d/c36a2da77aff809fc33fdf71d2585091.png";
-    return (
+    return  !this.win ? ( 
     <div id = "bodyDiv"><h1>Flip the pans, Get 4 bacons to win!</h1>
     <div id = "baconImages">
           {notBacons}
@@ -118,7 +132,10 @@ class Bacon extends React.Component {
     <footer>
           <p>Github Repository: <a href="https://github.com/pearlhulbert/CreativeProject3">https://github.com/pearlhulbert/CreativeProject3</a></p>
           <p>By: Noelle Marshall, Pearl Hulbert, and Logan Thurman</p>
-      </footer></div>);
+      </footer></div>) : 
+      (<div id="bacon-ipsum">
+                    <p id="bacon-text">{this.state.text}</p>
+            </div>);
   }
 }
 
